@@ -1,0 +1,865 @@
+@font-face {
+    font-family: 'iransans';
+    src: URL('/Iranian\ Sans.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+div {
+    height: 100%;
+}
+button{
+    cursor: pointer;
+}
+.saken {
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    background-color: #e5f2fe;
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    padding: 20px;
+}
+
+.sakenContainer {
+    display: flex;
+    justify-content: right;
+    width: 75%;
+    height: 20%;
+}
+
+.cross {
+    font-size: 27px;
+    color: #1780df
+}
+
+.cross:hover {
+    cursor: pointer;
+    color: #ee6b64;
+}
+
+.saken-text {
+    color: #6e7794;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "iransans";
+}
+
+.button {
+    cursor: pointer;
+    background-color: #1780df;
+    font-family: "iransans";
+    font-weight: 100;
+    font-size: .9rem;
+    display: flex;
+    margin-right: 110px;
+    margin-top: -5px;
+    height: 40px;
+    width: 170px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.menuBar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 72%;
+    height: 100%;
+    background-color: white;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    line-height: 80px;
+    display: flex;
+    list-style-type: none;
+}
+
+.menuLogo img {
+    height: 75%;
+    width: 150px;
+    margin-top: 3px;
+}
+
+.navContainer li {
+    font-family: "iransans";
+    display: flex;
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3b4157;
+}
+
+.navContainer li:hover {
+    cursor: pointer;
+    color: #fb815e;
+}
+
+.navContainer li div {
+    height: 100%;
+    width: 10%;
+}
+
+.loginButton {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "iransans";
+    background-color: #ededed;
+    direction: rtl;
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #1780df;
+    margin-right: 95px;
+    margin-top: 19px;
+}
+
+.loginButton div {
+    height: 100%;
+    width: 10%;
+    margin-right: 10px;
+}
+
+.searchBoxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/5ef8034.png);
+    background-size: cover;
+    padding: 50px;
+    margin: auto;
+    margin-top: 40px;
+    width: 70%;
+    height: 250px;
+    background-color: #1780df;
+    border-radius: 20px;
+}
+
+.searchBarTitle {
+    font-size: 40px;
+    font-family: "iransans";
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.searchBarContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 65px;
+    width: 85%;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.searchBarinput {
+    direction: rtl;
+    height: 100%;
+    width: 55%;
+    padding: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "iransans";
+    border-radius: 0 15px 15px 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.searchBarinput::placeholder {
+    color: #6e7794;
+    opacity: 50%;
+}
+
+.searchBarLocationContainer {
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    width: 30%;
+}
+
+.searchBarLocationIcon {
+    text-align: center;
+}
+
+.searchBarLocationIcon div {
+    height: 30px;
+    border-right: 1px solid #dee2e6;
+    font-size: 20px;
+    color: #acadaf;
+    margin-top: 17px;
+}
+
+.searchBarLocationIcon div::before {
+    margin-top: 5px;
+}
+
+.searchBarLocationInput {
+    outline: none;
+    box-shadow: none;
+    overflow: hidden;
+    color: #6e7794;
+    outline: 0;
+    border: 0;
+    font-family: "iransans";
+    direction: rtl;
+    margin-right: 1rem;
+    width: 90%;
+}
+
+.searchBarInputIconContainer {
+    position: relative;
+    height: 100%;
+    width: 10%;
+}
+
+.searchBarInputIconContainer span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #acadaf;
+}
+
+.searchButton {
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    position: relative;
+    font-family: "iransans";
+    background-color: #fb815e;
+    border-radius: 15px 0 0 15px;
+    width: 20%;
+    color: white;
+    direction: rtl;
+}
+
+.searchButton:hover {
+    background-color: #fa6439;
+}
+
+.searchButton span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainBodyContainer {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bestProfessionHeaderContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 20px;
+    margin-top: 50px;
+}
+
+.bestProfessionTitle {
+    direction: rtl;
+    font-family: "iransans";
+    color: #3b4157;
+}
+
+.showAll {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "iransans";
+    color: #1780df;
+    cursor: pointer;
+}
+
+.professionsBoxContainer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+}
+.professionsBox {
+    width: 120px;
+    height: 150px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "iransans";
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+
+}
+.professionsBox:hover{
+    box-shadow:0 3px 6px 0 rgba(0,0,0,.16)
+}
+.professionBoxImageContainer{
+    position: relative;
+    width: 90%;
+    height: 60%;
+    border-radius: 5px;
+
+}
+.professionBoxImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.professionBoxTextContainer{
+    width: 100%;
+    height: 30%;
+    padding: 15px;
+
+}
+.professionBoxText{
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+}
+.commentsContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 500px;
+}
+.commentsHeaderContainer{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.commentsBoxContainer{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.commentsHeaderHeading{
+    font-family: "iransans";
+    font-size: 20px;
+    font-weight: 700;
+    color:#3b4157;
+    margin-top: 30%;
+
+}
+.commentsHeaderText{
+    line-height: 30px;
+    margin-top: 5%;
+    color: #6e7794;
+    font-size-adjust: 14px;
+    font-family: "iransans";
+    width: 75%;
+}
+.commentsBox{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: #e5f2fe;
+    border: 1px solid #1780df;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.commentTextContainer{
+    padding: 2rem;
+    width: 100%;
+    direction: rtl;
+    font-family: "iransans";
+    line-height: 2rem;
+    color:#3b4157;
+    height: 70%;
+}
+.quote{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 6%;
+    top: -6%;
+}
+.doctorInfoContainer{
+    padding: 2.5%;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 30%;
+    border-top: 2px dashed #6e7794;
+}
+.doctorImage{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.doctorInfo{
+    font-family: "iransans";
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    direction: rtl;
+    width: 50%;
+    height: 100%;
+}
+.doctorName{
+margin: .5rem;
+}
+.doctorProff{
+    margin: .5rem;
+    font-size: 12px;
+}
+.otherCommentsButton{
+    margin-right: 10rem;
+    position: relative;
+    padding: .5rem;
+    font-size: 10px;
+    direction: rtl;
+    text-align: center;
+    font-family: "iransans";
+    color: white;
+    background-color: #fb815e;
+    height: 70px;
+    width: 250px;
+    border-radius: 10px;
+}
+.otherCommentsButton:hover{
+    cursor: pointer;
+    background-color: #fa6439;
+}
+.otherCommentsButton p{
+    position: absolute;
+    font-size: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.triangle{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-top: 0;
+    border-right: 1px solid #1780df;
+    border-bottom: 1px solid #1780df;
+    border-left: 0;
+    bottom: -4%;
+    left: 10%;
+    content: "";
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #e5f2fe;
+}
+.triangle::after{
+    font-family: "iransans";
+    content: "نظرآرمین";
+    font-size: 15px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: rotate(-45deg)
+}
+.specialServicesContainer{
+    width: 100%;
+    height: 800px;
+    background-image: url(/img/coronaBox.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.specialServicesFlexBox{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.specialServicesHeader{
+    text-align: center;
+    font-size: 28px;
+    direction: rtl;
+    color: white;
+    font-family: "iransans";
+    margin-top: 50px;
+}
+.coronaBoxContainer{
+    margin-top: 10%;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+.pcrTestContainer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.onlineTestContainer{
+    width: 40%;
+}
+.pcrImage{
+    height: 50%;
+    background-image: url(/img/pcrTest.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.onlineImage{
+    background-image: url(/img/onlineTest.png);
+}
+.pcrTitle{
+    font-family: "iransans";
+    direction: rtl;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.pcrText{
+    padding: 20px;
+    margin-top: 15px;
+    direction: rtl;
+    color: white;
+    font-family: "iransans";
+    font-size: 15px;
+    text-align: justify;
+    line-height: 2rem;
+}
+.coronaBoxButton{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    height: 10%;
+    border: 2px solid white;
+    color: white;
+    font-family: "iransans";
+    font-size: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.coronaBoxButton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #1780df
+}
+.coronaBoxButton span{
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+.applicationContainer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.applicationImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.applicationImage{
+    height: 70%;
+    width: 80%;
+    background-image: url(/img/applicationImage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.socialContainer{
+    display: flex;
+    flex-direction: row-row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+}
+.socialContainer img {
+    margin-left: 10px;
+    width: 6%;
+    cursor: pointer;
+}
+
+.applicationDownloadContainer{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.applicationDownloadBox{
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 70%;
+    width: 80%;
+}
+.applicationDownloadTitle{
+    font-family: "iransans";
+    font-size:20px;
+    direction: rtl;
+    color: #3b4157;
+}
+.applicationDownloadText{
+    font-family: "iransans";
+    font-size:14px;
+    direction: rtl;
+    color: #3b4157;
+    margin-top: 30px;
+    text-align: right;
+    line-height: 2rem;
+}
+.enterMobileText{
+    margin-top: 20%;
+    direction: rtl;
+    font-family: "iransans";
+    color: #3b4157;
+    font-size:15px;
+}
+.mobileContainer{
+    width: 100%;
+    height: 25%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.mobileInput{
+    background-color: white;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    height: 90%;
+    width: 60%;
+    padding: 10px;
+    font-family: "iransans";
+    direction: rtl;
+    font-size:10px;
+    border-radius: 10px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.darmankadeFooter{
+    width: 100%;
+    height: 900px;
+    background-color: #1780df;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.leftContainer{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.rightContainer{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.midContainer{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.midContainer img {
+    margin-top: 50px;
+}
+.footerText{
+    direction: rtl;
+    text-align: center;
+    color: white;
+    font-family: "iransans";
+    margin-top: 50px;
+    line-height: 30px;
+
+}
+
+.footerLink{
+    direction: rtl;
+    color: white;
+    font-family: "iransans";
+    text-decoration: none;
+    padding: 10px;
+
+}
+.footerLinkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid white;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+.footerLinkContainer:hover{
+
+    background-color: white;
+
+
+}
+.footerLinkContainer:hover > a{
+    color: #1780df;
+}
+.socialContainer{
+    display: flex;
+    justify-content: space-around;
+
+}
+.socialContainer svg{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+.line{
+    width: 1px;
+    height: 30%;
+    background-color: #fff;
+}
+.khabarname{
+    direction: rtl;
+    text-align: center;
+    color: white;
+    font-family: "iransans";
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.nameInputContainer{
+    width: 70%;
+    height: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "iransans";
+
+}
+.firstName{
+    font-family: inherit;
+    direction: rtl;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #495057;
+    border: 1px solid #ced4da;
+    margin-left: 2px;
+    margin-top: 2px;
+
+}
+.lastName{
+    margin-top: 2px;
+    color: #495057;
+    font-family: inherit;
+    direction: rtl;
+    border-radius: 5px;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    margin-bottom: 5px;
+
+}
+.email{
+    width: 70%;
+    height: 5%;
+    margin-top: 5px;
+    color: #495057;
+    font-family: "iransans";
+    direction: rtl;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #ced4da;
+
+}
+.signupButton{
+    width: 70%;
+    height: 60px;
+    background-color: #f85b2f;
+    color: white;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-family: "iransans";
+    position: relative;
+    z-index: 1;
+    border: none;
+    transition: all .5s;
+}
+.signupButton::before{
+    transition: all .5s;
+    position: absolute;
+    right:0;
+    content: "";
+    height: 100%;
+    width: 80px;
+    background-color: #c4978b;
+    border-radius: 15px;
+    z-index: -1;
+}
+.signupButton:hover::before{
+    width: 100%;
+}
+.signupButtonIcon{
+    position: relative;
+    margin-right: 5%;
+    text-align: center;
+    margin-left: 30%;
+    font-size-adjust: 20px;
+    color: white;
+    z-index: 12;
+}
+.mobileButton{
+    margin-right: 10px;
+}

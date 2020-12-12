@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'iransans';
+    src: URL('/Iranian\ Sans.ttf') format('truetype');
+  }
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: "iransans";
+}
+div {
+    height: 100%;
+  }
+.login-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.login-rightBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33.5%;
+    height: 100vh;
+    background-color:#1780df;
+}
+.login-rightbBox-container{
+background-color: transparent;
+height: 50%;
+width: 50%;
+margin: auto;
+}
+.login-image{
+    background-image: url(/loginLogo.svg);
+    background-size:250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40%;
+    width: 100%;
+}
+.login-textOne{
+ height: 10%;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+.login-textTwo{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+.login-leftBox{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+}
+.login-leftBox-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+width: 60%;
+margin: auto;
+}
+.login-leftBox-smallContainer{
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+}
+.login-leftBox-text{
+    text-align: center;
+    margin-bottom: 40px;
+    height: 10%;
+
+}
+.login-mobilePhone{
+    position: relative;
+    border: 2px solid #cdcdcd ;
+    border-radius: 5px;
+    height: 100%;
+    width: 60%;
+    padding:10px;
+    font-size: 10px;
+
+}
+.login-mobileButton{
+    color: #6e7794;
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: auto;
+    right: 55%;
+    top: 30%;
+}
+.login-confirmButton{
+    background: #fb815e;
+    color: white;
+    margin-top: 30px;
+    width: 60%;
+    height: 15%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+}
+.login-refButton{
+    position: relative;
+    height: 15%;
+    width: 25%;
+    border: 1px solid #fb815e ;
+    color: #fb815e;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.login-refButton:hover{
+    background-color:#fb815e ;
+    color: white;
+}
+.login-googleButton{
+    position: absolute;
+    background-image: url(/google.png);
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: center;
+    width: 60%;
+    height: 30%;
+    margin-top: 30px;
+    bottom: 10px;
+}

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+ 
+.icon-user-add-outline:before { content: '\e10e'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-cube:before { content: '\f1b2'; } /* '' */
+.icon-wifi:before { content: '\f1eb'; } /* '' */
+.icon-book-alt:before { content: '📔'; } /* '\1f4d4' */
