@@ -21,11 +21,7 @@ div {
 button{
     cursor: pointer;
 }
-@media only screen and (max-width:1640px){
-    html{
-        font-size: 60%;
-    }
-}
+
 .saken {
     display: flex;
     justify-content: center;
@@ -33,7 +29,6 @@ button{
     background-color: #e5f2fe;
     width: 100%;
     height: 70px;
-    text-align: right;
 }
 
 .sakenContainer {
@@ -43,9 +38,18 @@ button{
     width: 75%;
     height: 100%;
 }
-
+@media only screen and (max-width:1470px){
+    .sakenContainer{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:1236){
+    .sakenContainer{
+        width: 100%;
+    }
+}
 .cross {
-    font-size: 27px;
+    font-size: 1.5rem;
     color: #1780df
 }
 
@@ -53,6 +57,7 @@ button{
     cursor: pointer;
     color: #ee6b64;
 }
+
 
 .saken-text {
     color: #6e7794;
@@ -101,6 +106,7 @@ button{
     line-height: 80px;
     display: flex;
     list-style: none;
+    position: relative;
 }
 
 .menuLogo img {
@@ -144,6 +150,85 @@ button{
     color: #1780df;
     margin-top: 19px;
     margin-right: auto;
+}
+.modal{
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    top: 5rem;
+    right: 7rem;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    display: none;
+
+
+}
+.rightModalContainer{
+    margin-right: 1rem;
+    width: 30%;
+    height: 100%;
+
+}
+.rightModalContainerMenu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.rightModalContainerMenu>li {
+    display: flex;
+    direction: rtl;
+    font-size: .8rem;
+}
+.rightModalContainerMenu>li>img {
+    margin-left: .5rem;
+}
+.middleModalContainer{
+    margin-right: 1rem;
+    width: 30%;
+    height: 100%;
+
+}
+.leftModalContainer{
+    margin-right: 1rem;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leftModalContainer img{
+    height: 90%;
+}
+.otherSpecials{
+    background-color:white ;
+    border:2px solid #fb815e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fb815e;
+    width: 60%;
+    height: 3rem;
+    font-family: "iransans";
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all .2s;
+
+}
+.otherSpecials:hover{
+    background-color:#fb815e ;
+    color: white;
+}
+.specialList:hover + .modal{
+    display: flex;
+
+
 }
 .navigationContainer{
     width: 70%;
