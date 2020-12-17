@@ -373,3 +373,64 @@ button{
 .menuBox:hover{
 cursor: pointer;
 }
+.merge{
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .5rem;
+    height: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+   
+}
+.merging{
+   
+    height: 100%;
+    width: 26%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: row-reverse;
+    align-items: center;
+   
+}
+.merging h1{
+    font-size: .8rem;
+    display: flex;
+    direction: rtl;
+    margin-right: 1rem;
+    
+}
+.choose{
+    background-color: #1780df;
+    height: 70%;
+    color: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    width: 10%;
+}
+.satisfaction{
+    background-color: white;
+    height: 70%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    color: #6e7794;
+}
+.soon{
+    background-color: white;
+    height: 70%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    color: #6e7794;
+}
