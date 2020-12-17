@@ -108,7 +108,9 @@ button{
     list-style: none;
     position: relative;
 }
-
+.magni{
+    margin-top: .4rem;
+}
 .menuLogo img {
     height: 75%;
     width: 150px;
@@ -150,6 +152,9 @@ button{
     color: #1780df;
     margin-top: 19px;
     margin-right: auto;
+}
+.loginButton:hover{
+    cursor: pointer;
 }
 .modal{
     background-color: white;
@@ -242,7 +247,7 @@ button{
     align-items: center;
 }
 .mainBody{
-    height: 100vh;
+    height: 100%;
     width: 73%;
     margin: 10px auto;
     display: flex;
@@ -302,6 +307,7 @@ button{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin-top: 1rem;
 
 }
 .pezeshkanContainer{
@@ -320,7 +326,7 @@ button{
     background-color: white;
     color: rgb(251, 129, 94);
     width: 50%;
-    height: 70%;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,7 +363,7 @@ button{
 .scrollBar{
     margin-top: .9rem;
         width: 20%;
-        height: 100%;
+        height: 50rem;
         border-radius: 10px;
         margin-left: 1.1rem;
         display: flex;
@@ -367,7 +373,7 @@ button{
     }
 .allSpecialities{
     width:100%;
-    height: 10%;
+    height: 5rem;
     background-color: white;
     border-bottom: 1px solid rgba(0,0,0,.125);
     border-radius: 10px 10px 0 0;
