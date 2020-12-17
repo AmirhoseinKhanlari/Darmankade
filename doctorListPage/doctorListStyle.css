@@ -434,3 +434,70 @@ cursor: pointer;
     border-radius: 1rem;
     color: #6e7794;
 }
+.bestDoctor{
+    background-color: yellow;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.RightBestDoctor{
+    background-color:white;
+    display: flex;
+    border-radius: .5rem;
+    flex-direction: row-reverse;
+    height: 100%;
+    width: 60%;
+    
+}
+.imageBestDoctor{
+    
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.imageBestDoctor img{
+    
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+}
+.informationOfDoctor{
+    padding:1rem;
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+  
+   
+}
+.stars{
+    background-color:white;
+    height: 10%;
+    width: 50%;
+    margin-top: 1rem;
+}
+.stars span{
+    color: #1780df;
+}
+.stars svg{
+    color: #1780df;
+    fill: #1780df;
+}
+.tashkhis{
+    color: #1780df;
+}
+.informationOfDoctor span{
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+.informationOfDoctor h2{
+    font-size: 1.5rem;
+}
+.leftBestDocotr{
+    background-color: r;
+}
