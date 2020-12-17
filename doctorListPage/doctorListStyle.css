@@ -296,7 +296,7 @@ button{
 }
 .leftBoxContainer{
     flex: 1;
-    background-color:white;
+
 }
 .rightBoxHeaderImage{
     width: 100%;
@@ -458,7 +458,7 @@ cursor: pointer;
     
 }
 .imageBestDoctor{
-    
+    margin-top: 1rem;
     height: 100%;
     width: 40%;
     display: flex;
@@ -751,4 +751,285 @@ direction: rtl;
 }
 .reason span{
     margin-right: 1rem;
+}
+.mainBodyContainer {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.applicationContainer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.applicationImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.applicationImage{
+    height: 70%;
+    width: 80%;
+    background-image: url(/img/applicationImage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.socialContainer{
+    display: flex;
+    flex-direction: row-row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+}
+.socialContainer img {
+    margin-left: 10px;
+    width: 6%;
+    cursor: pointer;
+}
+
+.applicationDownloadContainer{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.applicationDownloadBox{
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 70%;
+    width: 80%;
+}
+.applicationDownloadTitle{
+    font-family: "iransans";
+    font-size:20px;
+    direction: rtl;
+    color: #3b4157;
+}
+.applicationDownloadText{
+    font-family: "iransans";
+    font-size:14px;
+    direction: rtl;
+    color: #3b4157;
+    margin-top: 30px;
+    text-align: right;
+    line-height: 2rem;
+}
+.enterMobileText{
+    margin-top: 20%;
+    direction: rtl;
+    font-family: "iransans";
+    color: #3b4157;
+    font-size:15px;
+}
+.mobileContainer{
+    width: 100%;
+    height: 25%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.mobileInput{
+    background-color: white;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    height: 90%;
+    width: 60%;
+    padding: 10px;
+    font-family: "iransans";
+    direction: rtl;
+    font-size:10px;
+    border-radius: 10px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.specialServicesContainer{ 
+    width: 100%;
+    height: 800px;
+    background-image: url(/img/coronaBox.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.specialServicesFlexBox{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.specialServicesHeader{
+    text-align: center;
+    font-size: 28px;
+    direction: rtl;
+    color: white;
+    font-family: "iransans";
+    margin-top: 50px;
+}
+.coronaBoxContainer{
+    margin-top: 10%;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+.pcrTestContainer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.onlineTestContainer{
+    width: 40%;
+}
+.pcrImage{
+    height: 50%;
+    background-image: url(/img/pcrTest.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.onlineImage{
+    background-image: url(/img/onlineTest.png);
+}
+.pcrTitle{
+    font-family: "iransans";
+    direction: rtl;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.pcrText{
+    padding: 20px;
+    margin-top: 15px;
+    direction: rtl;
+    color: white;
+    font-family: "iransans";
+    font-size: 15px;
+    text-align: justify;
+    line-height: 2rem;
+}
+.coronaBoxButton{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    height: 10%;
+    border: 2px solid white;
+    color: white;
+    font-family: "iransans";
+    font-size: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.coronaBoxButton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #1780df
+}
+.coronaBoxButton span{
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+.footer{
+    font-size: 80%;
+    background-color: #1780df;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.footerRightContainer{
+    padding: 1rem;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 1rem;
+
+
+
+}
+.footerRightContainer p {
+
+    line-height: 1.5rem;
+    direction: rtl;
+    color: white;
+    margin-top: 1rem;
+}
+.footerRightContainer img{
+
+}
+.footerMiddleContainer{
+    margin-right: 5rem;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.middleBox{
+    margin-right: 3rem;
+}
+.middleBox span{
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+}
+.middleBox span:hover{
+    background-color: white;
+    color:#1780df ;
+    cursor: pointer;
+}
+.footerLeftContainer{
+    display: flex;
+    flex-direction: column;
+}
+.logoContainer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.logoContainer>img{
+    background-color: white;
+    width: 7rem;
+    height: 7rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+.socialContainer{
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+.socialContainer>svg{
+    stroke: white;
+}
+.socialContainer>svg:not(:last-child){
+    margin-right: 4rem;
 }
