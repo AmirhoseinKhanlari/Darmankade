@@ -12,6 +12,226 @@
 body{
     font-size: 80%;
     font-family: "iransans";
+    background-color: #fafafa;
+}
+.saken {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5f2fe;
+    width: 100%;
+    height: 70px;
+}
+
+.sakenContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+}
+@media only screen and (max-width:1470px){
+    .sakenContainer{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:1236){
+    .sakenContainer{
+        width: 100%;
+    }
+}
+.cross {
+    font-size: 1.5rem;
+    color: #1780df
+}
+
+.cross:hover {
+    cursor: pointer;
+    color: #ee6b64;
+}
+
+
+.saken-text {
+    color: #6e7794;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "iransans";
+    direction: rtl;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #1780df;
+    font-family: "iransans";
+    font-weight: 100;
+    font-size: .9rem;
+    display: flex;
+    margin-right: auto;
+    height: 3rem;
+    width: 11rem;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.menuBar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 75%;
+    height: 100%;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    line-height: 80px;
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+.magni{
+    margin-top: .4rem;
+}
+.menuLogo img {
+    height: 75%;
+    width: 150px;
+    margin-top: 3px;
+}
+
+.navContainer li {
+    font-family: "iransans";
+    display: flex;
+    margin-left: 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3b4157;
+}
+
+.navContainer li:hover {
+    cursor: pointer;
+    color: #fb815e;
+}
+
+.navContainer li div {
+    height: 100%;
+    width: 10%;
+}
+
+.loginButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "iransans";
+    background-color: #ededed;
+    direction: rtl;
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #1780df;
+    margin-top: 19px;
+    margin-right: auto;
+}
+.loginButton:hover{
+    cursor: pointer;
+}
+.modal{
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    top: 5rem;
+    right: 7rem;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    display: none;
+
+
+}
+.rightModalContainer{
+    margin-right: 1rem;
+    width: 30%;
+    height: 100%;
+
+}
+.rightModalContainerMenu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.rightModalContainerMenu>li {
+    display: flex;
+    direction: rtl;
+    font-size: .8rem;
+}
+.rightModalContainerMenu>li>img {
+    margin-left: .5rem;
+}
+.middleModalContainer{
+    margin-right: 1rem;
+    width: 30%;
+    height: 100%;
+
+}
+.leftModalContainer{
+    margin-right: 1rem;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leftModalContainer img{
+    height: 90%;
+}
+.otherSpecials{
+    background-color:white ;
+    border:2px solid #fb815e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fb815e;
+    width: 60%;
+    height: 3rem;
+    font-family: "iransans";
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all .2s;
+
+}
+.otherSpecials:hover{
+    background-color:#fb815e ;
+    color: white;
+}
+.specialList:hover + .modal{
+    display: flex;
+
+
+}
+.searchIcon{
+    color: #1780df;
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
 }
 .header{
  
@@ -27,13 +247,10 @@ body{
     
     display: flex;
     flex-direction: row;
-    margin: 0px auto;
    height: 100%;
-   width: 30%;
-    flex-wrap: wrap;
+   width: 75%;
     align-items: center;
-  padding-right: .5rem;
-  margin-right: 10rem;
+    margin: 1rem auto;
 
 }
 .headerList>li{
@@ -65,18 +282,16 @@ body{
 }
 .Whole{
     height: 200vh;
-    background-color: white;
     width: 100%;
     display: flex;
     justify-content: center;
    
 }
 .main{
-    background-color: white;
     height: 100vh;
     display: flex;
     flex-direction: row-reverse;
-    width: 80%;
+    width: 75%;
     
 }
 .rightSide{
@@ -99,6 +314,11 @@ body{
     display: flex;
     flex-direction: row-reverse;
     padding: 1.5rem;
+}
+.firstPart svg:hover{
+    fill: #fb815e;
+    border: 0 solid #e2e8f0;
+
 }
 .imageDR{
     border-radius: 50%;
@@ -195,11 +415,9 @@ color: #6e7794;
 }
 .rightSide svg:hover{
     cursor: pointer;
-    stroke: red;
-    fill: red;
+    fill: #fb815e;
 }
 .mainPart{
-    background-color: white;
     height: 150vh;
     width: 55%;
     display: flex;
