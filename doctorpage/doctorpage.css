@@ -289,7 +289,7 @@ body{
    
 }
 .main{
-    height: 100%;
+    height: 130rem;
     display: flex;
     flex-direction: row-reverse;
     width: 75%;
@@ -765,11 +765,13 @@ direction: rtl;
 .textLocation span{
     margin-right: .5rem;
     margin-top: 1.5rem;
+    line-height: 2rem;
 }
 .textLocation h4{
     font-size: 1rem;
     margin-top: 1.5rem;
     margin-right: .5rem;
+
 }
 .imageLocation2{
     height: 100%;
@@ -1180,4 +1182,198 @@ margin-left: 1rem;
 }
 .phone2{
     margin-top: 1rem;
+}
+.commentsDiv{
+    height: 60rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.commentsContainerHeader{
+    background-color: #ededed;
+    border-radius: 10px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.commentsContainerHeaderRightContainer{
+    padding: 1rem;
+}
+.commentsContainerHeaderLeftContainer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.commentsContainerHeaderLeftContainer h3{
+    margin-right: 1rem;
+    direction: rtl;
+
+}
+.commentsContainerHeaderLeftContainer p{
+    margin-top: .8rem;
+    direction: rtl;
+
+}
+.commentsRating{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40%;
+    width: 100%;
+}
+.rightCommentsDivContainer{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.emtiazContainer{
+    display: flex;
+    align-items: center;
+}
+.emtiazContainer svg {
+    margin-left: 1rem;
+}
+.leftCommentsDivContainer{
+    width: 50%;
+
+}
+.sorting{
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px;
+    height: 4rem;
+    display: flex;
+    width: 95%;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+.sorting svg{
+    margin-left: 1rem;
+}
+.miangin{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.miangin svg{
+    margin-left: 1rem;
+}
+.time{
+    display: flex;
+    margin-right: 3.5rem;
+    direction: rtl;
+
+}
+.sortingItem{
+    width: 7rem;
+    height: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6e7794;
+    margin-left: 1rem;
+}
+.sortingItem:hover{
+    cursor: pointer;
+}
+.sortingItemBlue{
+    background-color: #1780df;
+    color: white;
+}
+.comment{
+    width: 95%;
+    height: 12rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    font-size: .7rem;
+
+}
+.commentTopContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #ededed;
+    padding: .5rem;
+    height: 40%;
+    color: #6e7794;
+}
+.commentTopContainer svg{
+    margin-left: 1rem;
+}
+.thumbContainer{
+    margin-right: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #4dcc6b;
+}
+.thumbContainer svg{
+    margin-right: 1rem;
+    stroke: #4dcc6b;
+}
+.thumbContainer span{
+    direction: rtl;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.commentContainerDiv{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+}
+.commentsRightDivContainer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.commentsRightDivContainer span{
+    margin-bottom: 1rem;
+    direction: rtl;
+}
+.commentsMiddleDivContainer{
+    margin-right: 1rem;
+    width: 40%;
+    align-items: center;
+}
+.starContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: center;
+
+}
+.starContainer>svg{
+    fill: #1780df;
+    stroke: none;
+}
+.starContainer>svg:not(:last-child){
+    margin-right: .8rem;
+
+}
+.commentsBody{
+    height: 100%;
+    width: 90%;
+    direction: rtl;
+    margin-right: 3rem;
+}
+.commentsBody p{
+    line-height: 1.3rem;
+    font-size: .6rem;
 }
