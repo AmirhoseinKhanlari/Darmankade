@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+	<webapp url="http://130.185.74.68/VCS" />
+	<classroomApp url="http://130.185.74.68/VCS"/>
+	<fmsapps>
+		<vcs name="vcs" address="vufms.aut.ac.ir" />
+		<vc2 name="classroom" address="78.38.76.199" />
+	</fmsapps>
+	<red5apps>
+		<vc2 name="NadiaMediaServer" address="130.185.74.68" version="0.9.17" />
+		<vcs name="NadiaMediaServer" address="130.185.74.68" version="0.9.17" />
+
+	</red5apps>
+	<repo path="/repo/" url="http://130.185.74.68" />
+	<converter version="v1" />
+	<downloadUrl path="http://130.185.74.68/download/" />
+	<servlets>
+		<cinnamon url="/VCS/service/" />
+		<upload url="/VCS/Upload" />
+		<finishclass url="/VCS/FinishClass" />
+		<assignments url="/VCS/assignments" />
+		<attachments url="/VCS/attachments" />
+		<convert url="/VCS/ConvertDoc" />
+		<downloadXls url="/VCS/dllist" />
+		<importExcel url="/VCS/UpExcel" />
+		<uploadExercise url="/VCS/UpExercise" />
+		<attendanceExcel url="/VCS/AttendanceExcel" />
+	</servlets>
+	<applications>
+		<portal title="Amirkabir Virtual Education Portal" url="/portal" />
+		<vc title="Amirkabir Virtual Classroom" url="/classroom" />
+		<vc2 title="Amirkabir Virtual Classroom" url="/classroom" />
+		<cms title="Bahman Group Course Management System" url="/cms" />
+	</applications>
+	<images>
+
+	</images>
+</configuration>
