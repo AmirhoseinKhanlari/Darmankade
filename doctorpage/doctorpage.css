@@ -710,7 +710,13 @@ direction: rtl;
 }
 .dates span{
     margin-right: .4rem;
+
 }
+.dates:hover{
+    cursor: pointer;
+    color: tomato;
+}
+
 .downside{
     height: 85%;
     width: 100%;
@@ -925,7 +931,6 @@ margin-left: 1rem;
     text-align: center;
     width: 80%;
     height: 10%;
-    border: 2px solid white;
     color: white;
     font-family: "iransans";
     font-size: 10px;
@@ -1269,14 +1274,16 @@ margin-left: 1rem;
     display: flex;
     flex-direction: row-reverse;
     width: 100px;
-    height: 6px;
+    height: .3rem;
     background-color: #fafafa;
     margin: 0 1rem;
     border-radius: 20px;
+    background-color: #ededed;
 }
 .percentage{
+    border-radius: 20px;
     background-color: #1780df;
-    width: 80%;
+    width: 30%;
     height: 100%;
 }
 .leftCommentsDivContainer{
