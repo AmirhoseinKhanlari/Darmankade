@@ -261,6 +261,7 @@ button{
         flex-direction: row-reverse;
         flex-wrap: wrap;
         align-items: center;
+        transform: translate();
     }
 .specialitiesBox{
     margin-right: 70px;

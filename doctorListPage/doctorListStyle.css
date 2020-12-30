@@ -352,8 +352,7 @@ button{
     right: .5rem;
 }
 .menuBox{
-    background-color: violet;
-    height: 10%;
+    height: 3rem;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
@@ -562,6 +561,7 @@ padding: 1rem;
 .thirdLine{
     height: 33.3%;
     width: 100%;
+    border-radius: 10px;
     
     display: flex;
 align-items: center;
@@ -589,7 +589,6 @@ padding: 1rem;
     align-items: center;
 }
 .signupButton{
-    margin-right: 1rem;
     width: 70%;
     height: 4rem;
     background-color: #f85b2f;
