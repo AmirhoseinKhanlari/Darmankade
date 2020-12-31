@@ -1,4 +1,7 @@
 const id = localStorage.getItem("ID")
+
+console.log(id);
+
 const doctorName = document.querySelector('.secondPart h1')
 const text = document.querySelector('.text')
 const shomarenezampezeshki = document.querySelector('.secondPart h2')
@@ -11,11 +14,6 @@ const emtiazz = document.querySelector('.emtiaz .number')
 const allRate = document.querySelector('.nazarr')
 const commenter = document.querySelector('.person')
 const commentText = document.querySelector('.Comment span')
-
-
-
-
-
 const httpRequest = new XMLHttpRequest();
 httpRequest.open("GET",`https://intense-ravine-40625.herokuapp.com/doctors/${id}`)
 httpRequest.send();

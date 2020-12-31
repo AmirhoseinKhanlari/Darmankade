@@ -3,6 +3,9 @@ const doci = document.querySelector('.doci')
 const satisfaction = document.querySelector('.satisfaction')
 const choose = document.querySelector('.choose')
 const menuLogo = document.querySelector('.menuLogo')
+
+
+
 menuLogo.addEventListener('click',() => {
     window.location.href = '../index.html'
 })
@@ -89,6 +92,7 @@ const showDoctors = function (resp) {
                              </div>
                              <p>اولین نوبت خالی ${resp[i].first_empty_date}</p>
                     </div>
+                    <div class ="id">${resp[i].id}</div>
                 </div>
             </div>
         </div>
@@ -167,6 +171,7 @@ const showDoctors = function (resp) {
                          </div>
                          <p>اولین نوبت خالی ${dataArr[i].first_empty_date}</p>
                 </div>
+                <div class = "id">${resp[i].id}</div>
             </div>
         </div>
     </div>
@@ -189,7 +194,6 @@ httpRequest.onreadystatechange = function (){
             document.querySelector('.choose').style.backgroundColor = 'white'
             document.querySelector('.choose').style.color = '#6e7794'
         })
-        
         choose.addEventListener('click',function () {
             isSorted = !isSorted
             showDoctors(resp)
@@ -199,6 +203,18 @@ httpRequest.onreadystatechange = function (){
             satisfaction.style.color = '#6e7794'
 
         })
+
+        const bestDoctorEl = document.querySelectorAll('.bestDoctor')
+        for (let index = 0; index < bestDoctorEl.length; index++) {
+            bestDoctorEl[index].addEventListener('click',function () {
+                const id = document.querySelectorAll('.id')[index].textContent
+                localStorage.setItem("ID",id)
+                window.location.href = '../doctorpage/doctorpage.html'
+                
+            })
+            
+        }
+        
 
         
     }
