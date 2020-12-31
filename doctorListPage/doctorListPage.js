@@ -189,6 +189,7 @@ httpRequest.onreadystatechange = function (){
             document.querySelector('.choose').style.backgroundColor = 'white'
             document.querySelector('.choose').style.color = '#6e7794'
         })
+        
         choose.addEventListener('click',function () {
             isSorted = !isSorted
             showDoctors(resp)
