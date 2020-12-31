@@ -2,6 +2,10 @@ const merge = document.querySelector('.merge')
 const doci = document.querySelector('.doci')
 const satisfaction = document.querySelector('.satisfaction')
 const choose = document.querySelector('.choose')
+const menuLogo = document.querySelector('.menuLogo')
+menuLogo.addEventListener('click',() => {
+    window.location.href = '../index.html'
+})
 const httpRequest = new XMLHttpRequest();
 httpRequest.open("GET","https://intense-ravine-40625.herokuapp.com/doctors");
 httpRequest.send();
