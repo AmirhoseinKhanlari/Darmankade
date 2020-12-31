@@ -1039,3 +1039,7 @@ direction: rtl;
 .socialContainer>svg:not(:last-child){
     margin-right: 4rem;
 }
+.doci{
+    width: 100%;
+    height: auto;
+}
