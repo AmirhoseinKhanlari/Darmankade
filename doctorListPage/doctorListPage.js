@@ -175,7 +175,7 @@ const showDoctors = function (resp) {
 httpRequest.onreadystatechange = function (){
     if (this.readyState == 4 && this.status === 200) {
         let resp = JSON.parse(httpRequest.responseText)
-        dataArr = resp.slice()
+        dataArr = [...resp]
         showDoctors(resp)
         satisfaction.addEventListener('click',function () {
             this.style.backgroundColor = '#1780df'
