@@ -151,6 +151,9 @@ button{
     margin-top: 19px;
     margin-right: auto;
 }
+.loginButton:hover {
+    cursor: pointer;
+}
 .modal{
     background-color: white;
     border-radius: 0 0 10px 10px;
@@ -1042,4 +1045,7 @@ direction: rtl;
 .doci{
     width: 100%;
     height: auto;
+}
+.id {
+    display: none;
 }
