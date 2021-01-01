@@ -203,3 +203,11 @@ httpRequest.onreadystatechange = function (){
         
     }
 }
+const loginButton1 = document.querySelector('.loginButton')
+loginButton1.addEventListener('click',function() {
+    window.location.href = '../login.html';
+})
+const takhasos = document.querySelector('.specialList')
+takhasos.addEventListener('click',function() {
+    window.location.href = '../specialities/specialities.html';
+})
