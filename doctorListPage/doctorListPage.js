@@ -98,6 +98,16 @@ const showDoctors = function (resp) {
         </div>
             `
             doci.insertAdjacentHTML('afterbegin',html)
+            const bestDoctorEl = document.querySelectorAll('.doci>div')
+            for (let index = 0; index < bestDoctorEl.length; index++) {
+                bestDoctorEl[index].addEventListener('click',function () {
+                    const id = document.querySelectorAll('.id')[index].textContent;
+                    localStorage.setItem("ID",id)
+                    window.location.href = '../doctorpage/doctorpage.html'
+                    
+                })
+                
+            }
     
         })  
         
@@ -177,6 +187,22 @@ const showDoctors = function (resp) {
     </div>
         `
         doci.insertAdjacentHTML('afterbegin',html)
+        const bestDoctorEl = document.querySelectorAll('.doci>div')
+        for (let index = 0; index < bestDoctorEl.length; index++) {
+            bestDoctorEl[index].addEventListener('click',function () {
+                
+                console.log("HI");
+                
+                const id = document.querySelectorAll('.id')[index].textContent;
+
+                console.log(id);
+                
+                localStorage.setItem("ID",id)
+                window.location.href = '../doctorpage/doctorpage.html'
+                
+            })
+            
+        }
 
     })   
 }
@@ -204,16 +230,7 @@ httpRequest.onreadystatechange = function (){
 
         })
 
-        const bestDoctorEl = document.querySelectorAll('.bestDoctor')
-        for (let index = 0; index < bestDoctorEl.length; index++) {
-            bestDoctorEl[index].addEventListener('click',function () {
-                const id = document.querySelectorAll('.id')[index].textContent
-                localStorage.setItem("ID",id)
-                window.location.href = '../doctorpage/doctorpage.html'
-                
-            })
-            
-        }
+
         
 
         
