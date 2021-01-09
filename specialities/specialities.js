@@ -12,6 +12,8 @@ const takhasos = document.querySelector(".specialList");
 takhasos.addEventListener("click", function () {
   window.location.href = "specialities.html";
 });
+
+//SLIDER
 const slides = document.querySelectorAll(".slide");
 const goToSlide = function (slide) {
   slides.forEach((s, i) => {
@@ -30,3 +32,4 @@ setInterval(() => {
   goToSlide(currSlide)
   
 }, 4000);
+/////
